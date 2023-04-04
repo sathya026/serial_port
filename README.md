@@ -20,7 +20,7 @@ Directly from GitHub:
 Run the tool with:
 python -m serial_tool
 
-Via pipx
+Via pipx:
 pipx install git+https://github.com/sathya026/serial-tool
 
 Run the tool with just:
