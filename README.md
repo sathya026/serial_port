@@ -14,8 +14,8 @@ Save/load current settings to a configuration file.
 
 
 
-Directly from GitHub
-$ python -m pip install serial_tool@git+https://github.com/sathya026/serial-tool
+Directly from GitHub:
+  $ python -m pip install serial_tool@git+https://github.com/sathya026/serial-tool
 
 Run the tool with:
 python -m serial_tool
