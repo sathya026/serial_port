@@ -1,0 +1,96 @@
+VERSION ""
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+
+BS_:
+
+BU_: 
+
+
+BO_ 513 Configuration1: 8 Vector__XXX
+ SG_ No__Of_Cells : 7|8@0+(1,0) [0|255] "" Vector__XXX
+ SG_ No__Of_Cells_in_Parallel : 15|8@0+(1,0) [0|255] "" Vector__XXX
+ SG_ No__Of_Slaves : 23|8@0+(1,0) [0|255] "" Vector__XXX
+ SG_ Contactor_Cut_Off_Time : 31|8@0+(1,0) [0|255] "sec" Vector__XXX
+ SG_ Contactor_ON_Timer : 39|8@0+(1,0) [0|255] "sec" Vector__XXX
+ SG_ Rated_Cell_Capacity : 47|24@0+(1,0) [0|16777215] "mAH" Vector__XXX
+
+BO_ 514 Configuration2: 8 Vector__XXX
+ SG_ Cell_Under_voltage_cutoff : 7|16@0+(1,0) [0|65535] "mV" Vector__XXX
+ SG_ Cell_Under_voltage_recovery : 23|16@0+(1,0) [0|65535] "mV" Vector__XXX
+ SG_ Cell_Over_voltage_cutoff : 39|16@0+(1,0) [0|65535] "mV" Vector__XXX
+ SG_ Cell_Over_voltage_recovery : 55|16@0+(1,0) [0|65535] "mV" Vector__XXX
+
+BO_ 515 Configuration3: 8 Vector__XXX
+ SG_ Pack_UV_cutoff : 7|16@0+(1,0) [0|65535] "mV" Vector__XXX
+ SG_ Pack_UV_recovery : 23|16@0+(1,0) [0|65535] "mV" Vector__XXX
+ SG_ Pack_OV_cutoff : 39|16@0+(1,0) [0|65535] "mV" Vector__XXX
+ SG_ Pack_OV_recovery : 55|16@0+(1,0) [0|65535] "mV" Vector__XXX
+
+BO_ 516 Configuration4: 8 Vector__XXX
+ SG_ Charging_current_cutoff : 7|24@0+(1,0) [0|16777215] "mA" Vector__XXX
+ SG_ Charging_current_recovery : 31|24@0+(1,0) [0|16777215] "mA" Vector__XXX
+ SG_ Charging_over_temperature_cutoff : 55|8@0+(1,0) [0|255] "C" Vector__XXX
+ SG_ Charging_Over_temperature_recovery : 63|8@0+(1,0) [0|255] "C" Vector__XXX
+
+BO_ 517 Configuration5: 8 Vector__XXX
+ SG_ Discharging_current_cutoff : 7|24@0-(1,0) [-8388608|8388608] "mA" Vector__XXX
+ SG_ Dischraging_current_recovery : 31|24@0-(1,0) [-8388608|8388607] "mA" Vector__XXX
+ SG_ Charging_under_Temperature_cutoff : 55|8@0-(1,0) [-128|127] "C" Vector__XXX
+ SG_ Charging_under_Temperature_recovery : 63|8@0-(1,0) [-128|127] "C" Vector__XXX
+
+BO_ 518 Configuration6: 8 Vector__XXX
+ SG_ Discharging_over_temperature_cutoff : 7|16@0+(1,0) [0|5000] "mV" Vector__XXX
+ SG_ Discharging_over_temperature_recovery : 23|16@0+(1,0) [0|65535] "C" Vector__XXX
+ SG_ Discharging_Under_temperature_cutoff : 39|16@0-(1,0) [0|5000] "degC" Vector__XXX
+ SG_ Discharging_under_temperature_recovery : 55|16@0-(1,0) [-32768|32767] "C" Vector__XXX
+
+BO_ 519 Configuration7: 8 Vector__XXX
+ SG_ Start_Cell_balancing_voltage_ : 7|16@0+(1,0) [0|65535] "mV" Vector__XXX
+ SG_ Balancing_delta_difference : 23|16@0+(1,0) [0|32767] "mV" Vector__XXX
+ SG_ AH_Charge_discharge : 39|16@0+(1,0) [0|65535] "mAH" Vector__XXX
+ SG_ Rated_Cell_capacity : 55|16@0+(1,0) [0|65535] "mAH" Vector__XXX
+
+BO_ 520 Configuration8: 2 Vector__XXX
+ SG_ ShortCircuitCurrent : 7|16@0-(1,0) [-32768|32767] "Amps" Vector__XXX
+
+BO_ 521 Configuration_9: 8 Vector__XXX
+
+BO_ 778 IGN_ON: 2 Vector__XXX
+ SG_ IGNON : 7|8@0+(1,0) [0|1] "bool" Vector__XXX
+ SG_ UARTDBG : 15|8@0+(1,0) [0|1] "bool" Vector__XXX
+
+BO_ 779 IGN_OFF: 0 Vector__XXX
+
+
+BA_DEF_ SG_  "SignalType" STRING ;
+BA_DEF_DEF_  "SignalType" "";
+
+
